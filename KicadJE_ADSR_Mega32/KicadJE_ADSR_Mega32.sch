@@ -17,8 +17,8 @@ $Comp
 L MCU_Microchip_ATmega:ATmega32A-AU U?
 U 1 1 5CBFFAE5
 P 2500 3125
-F 0 "U?" H 2500 1036 50  0000 C CNN
-F 1 "ATmega32A-AU" H 2500 945 50  0000 C CNN
+F 0 "U?" H 2625 950 50  0000 C CNN
+F 1 "ATmega32A-AU" H 2850 1075 50  0000 C CNN
 F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 2500 3125 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 2500 3125 50  0001 C CNN
 	1    2500 3125
@@ -202,9 +202,9 @@ $Comp
 L Device:Crystal Y?
 U 1 1 5CC2040F
 P 1725 1775
-F 0 "Y?" V 1679 1906 50  0000 L CNN
-F 1 "Crystal" V 1770 1906 50  0000 L CNN
-F 2 "" H 1725 1775 50  0001 C CNN
+F 0 "Y?" V 1525 1775 50  0000 L CNN
+F 1 "16MHz" V 1875 1650 50  0000 L CNN
+F 2 "Crystal:Crystal_HC49-U_Vertical" H 1725 1775 50  0001 C CNN
 F 3 "~" H 1725 1775 50  0001 C CNN
 	1    1725 1775
 	0    1    1    0   
@@ -224,7 +224,7 @@ $Comp
 L Device:C C?
 U 1 1 5CC22306
 P 1500 1925
-F 0 "C?" H 1375 2050 50  0000 L CNN
+F 0 "C?" H 1375 1825 50  0000 L CNN
 F 1 "22p" H 1175 1925 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1538 1775 50  0001 C CNN
 F 3 "~" H 1500 1925 50  0001 C CNN
@@ -237,7 +237,7 @@ $Comp
 L Device:C C?
 U 1 1 5CC23635
 P 1500 1625
-F 0 "C?" H 1375 1750 50  0000 L CNN
+F 0 "C?" H 1400 1500 50  0000 L CNN
 F 1 "22p" H 1175 1625 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1538 1475 50  0001 C CNN
 F 3 "~" H 1500 1625 50  0001 C CNN
@@ -451,4 +451,6 @@ Text GLabel 950  4350 0    50   Input ~ 0
 8_Rx
 Text GLabel 950  4250 0    50   Input ~ 0
 9_Tx
+Text Notes 575  5450 0    50   ~ 0
+Annotation according to \nhttps://github.com/MCUdude/MightyCore
 $EndSCHEMATC
