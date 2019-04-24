@@ -335,36 +335,28 @@ Wire Wire Line
 Connection ~ 850  3450
 Wire Wire Line
 	850  3450 900  3450
-Text GLabel 1150 4350 2    50   Input ~ 0
-Rx
-Text GLabel 1150 4250 2    50   Input ~ 0
-Tx
 Text GLabel 3100 4325 2    50   Input ~ 0
-10
+10_INT0
 Text GLabel 3100 4425 2    50   Input ~ 0
-11
+11_INT1
 Text GLabel 3100 4525 2    50   Input ~ 0
-12
+12_PWM
 Text GLabel 3100 4625 2    50   Input ~ 0
-13
+13_PWM
 Text GLabel 3100 4725 2    50   Input ~ 0
-14
+14_PWM
 Text GLabel 3100 4825 2    50   Input ~ 0
-15
+15_PWM
 Text GLabel 3100 4225 2    50   Input ~ 0
-9
-Text GLabel 950  4250 0    50   Input ~ 0
-9
-Text GLabel 950  4350 0    50   Input ~ 0
-8
+9_Tx
 Wire Wire Line
 	950  4350 1250 4350
 Text GLabel 3100 4125 2    50   Input ~ 0
-8
+8_Rx
 Text GLabel 3100 3225 2    50   Input ~ 0
-16
+16_SCL
 Text GLabel 3100 3325 2    50   Input ~ 0
-17
+17_SDA
 Text GLabel 3100 3425 2    50   Input ~ 0
 18
 Text GLabel 3100 3525 2    50   Input ~ 0
@@ -380,51 +372,43 @@ Text GLabel 3100 3925 2    50   Input ~ 0
 Wire Wire Line
 	675  4150 1250 4150
 Text GLabel 3100 2325 2    50   Input ~ 0
-0
-Text GLabel 800  750  0    50   Input ~ 0
-0
+0_LED
 Text GLabel 3100 2425 2    50   Input ~ 0
 1
 Text GLabel 3100 2525 2    50   Input ~ 0
-2
+2_INT2
 Text GLabel 3100 2625 2    50   Input ~ 0
-3
+3_PWM
 Text GLabel 3100 2725 2    50   Input ~ 0
-4
+4_PWM
 Text GLabel 3100 2825 2    50   Input ~ 0
-5
-Text GLabel 3100 2925 2    50   Input ~ 0
-6
-Text GLabel 3100 3025 2    50   Input ~ 0
-7
+5_MOSI
 Text GLabel 825  3350 0    50   Input ~ 0
-7
+7_SCK
 Wire Wire Line
 	825  3350 900  3350
 Text GLabel 825  3150 0    50   Input ~ 0
-6
+6_MISO
 Wire Wire Line
 	825  3150 900  3150
 Text GLabel 825  3250 0    50   Input ~ 0
-5
+5_MOSI
 Wire Wire Line
 	825  3250 900  3250
-Text GLabel 3100 1425 2    50   Input ~ 0
-A0
 Text GLabel 3100 1525 2    50   Input ~ 0
-A1
+25_A1
 Text GLabel 3100 1625 2    50   Input ~ 0
-A2
+26_A2
 Text GLabel 3100 1725 2    50   Input ~ 0
-A3
+27_A3
 Text GLabel 3100 1825 2    50   Input ~ 0
-A4
+28_A4
 Text GLabel 3100 1925 2    50   Input ~ 0
-A5
+29_A5
 Text GLabel 3100 2025 2    50   Input ~ 0
-A6
+30_A6
 Text GLabel 3100 2125 2    50   Input ~ 0
-A7
+31_A7
 $Comp
 L Device:R R?
 U 1 1 5CC9B2C2
@@ -455,4 +439,16 @@ Wire Wire Line
 Connection ~ 3650 1050
 Wire Wire Line
 	2600 1050 3000 1050
+Text GLabel 3100 3025 2    50   Input ~ 0
+7_SCK
+Text GLabel 3100 2925 2    50   Input ~ 0
+6_MISO
+Text GLabel 800  750  0    50   Input ~ 0
+0_LED
+Text GLabel 3100 1425 2    50   Input ~ 0
+24_A0
+Text GLabel 950  4350 0    50   Input ~ 0
+8_Rx
+Text GLabel 950  4250 0    50   Input ~ 0
+9_Tx
 $EndSCHEMATC
