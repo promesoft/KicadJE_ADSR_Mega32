@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 2
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -528,5 +528,69 @@ F 2 "LED_THT:LED_D3.0mm" H 10850 750 50  0001 C CNN
 F 3 "~" H 10850 750 50  0001 C CNN
 	1    10850 750 
 	-1   0    0    1   
+$EndComp
+$Sheet
+S 10000 3250 1000 1750
+U 5CD6EBF4
+F0 "KicadJE-EU1-PT2399_sub" 50
+F1 "KicadJE-EU1-PT2399_sub.sch" 50
+$EndSheet
+$Comp
+L Connector:AudioJack2 J101
+U 1 1 5CD77BFD
+P 2325 2650
+AR Path="/5CD77BFD" Ref="J101"  Part="1" 
+AR Path="/5D60ED9A/5CD77BFD" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CD77BFD" Ref="J?"  Part="1" 
+F 0 "J101" H 2092 2721 50  0000 R CNN
+F 1 "In" H 2092 2630 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 2325 2650 50  0001 C CNN
+F 3 "~" H 2325 2650 50  0001 C CNN
+	1    2325 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2 J102
+U 1 1 5CD77C03
+P 2325 3050
+AR Path="/5CD77C03" Ref="J102"  Part="1" 
+AR Path="/5D60ED9A/5CD77C03" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CD77C03" Ref="J?"  Part="1" 
+F 0 "J102" H 2092 3121 50  0000 R CNN
+F 1 "Out" H 2092 3030 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 2325 3050 50  0001 C CNN
+F 3 "~" H 2325 3050 50  0001 C CNN
+	1    2325 3050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 3050 2125 3050
+Wire Wire Line
+	1825 2650 2125 2650
+Wire Wire Line
+	2125 2550 1975 2550
+Wire Wire Line
+	2125 2950 1975 2950
+Wire Wire Line
+	1975 3150 1975 2950
+Connection ~ 1975 2950
+Wire Wire Line
+	1975 2550 1975 2950
+Text GLabel 1825 2650 0    50   Input ~ 0
+In
+Text GLabel 1825 3050 0    50   Input ~ 0
+Out
+$Comp
+L power:GNDA #PWR?
+U 1 1 5CD77C12
+P 1975 3150
+AR Path="/5CD6EBF4/5CD77C12" Ref="#PWR?"  Part="1" 
+AR Path="/5CD77C12" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 1975 2900 50  0001 C CNN
+F 1 "GNDA" H 1980 2977 50  0000 C CNN
+F 2 "" H 1975 3150 50  0001 C CNN
+F 3 "" H 1975 3150 50  0001 C CNN
+	1    1975 3150
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
