@@ -253,12 +253,12 @@ Wire Wire Line
 $Comp
 L power:+5VA #PWR0301
 U 1 1 5D64AB64
-P 5175 1150
-F 0 "#PWR0301" H 5175 1000 50  0001 C CNN
-F 1 "+5VA" H 5190 1323 50  0000 C CNN
-F 2 "" H 5175 1150 50  0001 C CNN
-F 3 "" H 5175 1150 50  0001 C CNN
-	1    5175 1150
+P 5275 1150
+F 0 "#PWR0301" H 5275 1000 50  0001 C CNN
+F 1 "+5VA" H 5290 1323 50  0000 C CNN
+F 2 "" H 5275 1150 50  0001 C CNN
+F 3 "" H 5275 1150 50  0001 C CNN
+	1    5275 1150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1136,17 +1136,6 @@ F 3 "~" H 5850 1500 50  0001 C CNN
 	1    5850 1500
 	-1   0    0    1   
 $EndComp
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:L7805 U301
-U 1 1 5C76AC9D
-P 4725 1150
-F 0 "U301" H 4725 1392 50  0000 C CNN
-F 1 "L7805" H 4725 1301 50  0000 C CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 4750 1000 50  0001 L CIN
-F 3 "" H 4725 1100 50  0001 C CNN
-	1    4725 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5075 1300 5075 1150
 Connection ~ 5075 1150
@@ -1176,10 +1165,6 @@ Wire Wire Line
 Connection ~ 4725 1800
 Wire Wire Line
 	4725 1800 5075 1800
-Wire Wire Line
-	5400 1400 5650 1400
-Wire Wire Line
-	5650 1500 5400 1500
 $Comp
 L Device:D D?
 U 1 1 5C794D49
@@ -1216,11 +1201,7 @@ Wire Wire Line
 Wire Wire Line
 	1075 1150 2550 1150
 Wire Wire Line
-	5075 1150 5400 1150
-Wire Wire Line
-	5400 1150 5400 1400
-Wire Wire Line
-	5400 1500 5400 1800
+	5075 1150 5275 1150
 Wire Wire Line
 	1300 1450 2550 1450
 Wire Wire Line
@@ -1241,4 +1222,34 @@ Wire Wire Line
 	3350 4250 3350 4825
 Wire Wire Line
 	2825 5025 2975 5025
+Text Label 4425 950  0    50   ~ 0
+7v5
+Wire Wire Line
+	5400 1800 5400 1600
+Wire Wire Line
+	5400 1300 5400 1150
+Wire Wire Line
+	5650 1400 5650 1150
+Wire Wire Line
+	5650 1150 5400 1150
+Connection ~ 5400 1150
+Wire Wire Line
+	5400 1800 5650 1800
+Wire Wire Line
+	5650 1800 5650 1500
+Connection ~ 5400 1800
+Connection ~ 5275 1150
+Wire Wire Line
+	5275 1150 5400 1150
+$Comp
+L Regulator_Linear:L78L05_TO92 U?
+U 1 1 5CDB30D8
+P 4725 1150
+F 0 "U?" H 4725 1392 50  0000 C CNN
+F 1 "L78L05_TO92" H 4725 1301 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 4725 1375 50  0001 C CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e5/aa/23/5b/43/fd/CD00000446.pdf/files/CD00000446.pdf/jcr:content/translations/en.CD00000446.pdf" H 4725 1100 50  0001 C CNN
+	1    4725 1150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
