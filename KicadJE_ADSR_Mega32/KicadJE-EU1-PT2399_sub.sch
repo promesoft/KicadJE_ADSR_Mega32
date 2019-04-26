@@ -442,7 +442,7 @@ F 1 "20k" H 2380 4980 50  0000 R CNN
 F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 2450 5025 50  0001 C CNN
 F 3 "~" H 2450 5025 50  0001 C CNN
 	1    2450 5025
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	2150 5650 2200 5650
@@ -1057,7 +1057,7 @@ Wire Wire Line
 Wire Wire Line
 	2450 4825 2450 4850
 Wire Wire Line
-	2450 4525 2450 4375
+	2450 4525 2450 4475
 Wire Wire Line
 	2600 5025 2825 5025
 Connection ~ 2825 5025
@@ -1252,4 +1252,26 @@ F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/15/55/e
 	1    4725 1150
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:D D?
+U 1 1 5CDB44BB
+P 2075 4700
+AR Path="/5CDB44BB" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CDB44BB" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CDB44BB" Ref="D?"  Part="1" 
+F 0 "D?" V 2029 4779 50  0000 L CNN
+F 1 "1N1007" V 2120 4779 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 2075 4700 50  0001 C CNN
+F 3 "~" H 2075 4700 50  0001 C CNN
+	1    2075 4700
+	0    1    1    0   
+$EndComp
+Connection ~ 2075 4850
+Wire Wire Line
+	2075 4550 2075 4475
+Wire Wire Line
+	2075 4475 2450 4475
+Connection ~ 2450 4475
+Wire Wire Line
+	2450 4475 2450 4375
 $EndSCHEMATC
