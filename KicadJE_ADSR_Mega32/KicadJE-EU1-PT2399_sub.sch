@@ -29,20 +29,6 @@ F 3 "~" H 3200 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
-U 1 1 5D62F379
-P 1500 -475
-AR Path="/5D62F379" Ref="#PWR?"  Part="1" 
-AR Path="/5D60ED9A/5D62F379" Ref="#PWR0202"  Part="1" 
-AR Path="/5CD6EBF4/5D62F379" Ref="#PWR0302"  Part="1" 
-F 0 "#PWR0302" H 1500 -725 50  0001 C CNN
-F 1 "GND" H 1505 -648 50  0000 C CNN
-F 2 "" H 1500 -475 50  0001 C CNN
-F 3 "" H 1500 -475 50  0001 C CNN
-	1    1500 -475
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 5D62F383
 P 5075 1450
@@ -55,29 +41,6 @@ F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 5113 1300 50  
 F 3 "~" H 5075 1450 50  0001 C CNN
 	1    5075 1450
 	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	3250 -275 3250 -375
-Wire Wire Line
-	2750 -375 2750 -275
-Wire Wire Line
-	2750 -275 3250 -275
-Wire Wire Line
-	2750 -175 2750 -275
-Connection ~ 2750 -275
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5D62F3CA
-P 1700 -775
-AR Path="/5D62F3CA" Ref="#FLG?"  Part="1" 
-AR Path="/5D60ED9A/5D62F3CA" Ref="#FLG0201"  Part="1" 
-AR Path="/5CD6EBF4/5D62F3CA" Ref="#FLG0302"  Part="1" 
-F 0 "#FLG0302" H 1700 -700 50  0001 C CNN
-F 1 "PWR_FLAG" H 1700 -601 50  0000 C CNN
-F 2 "" H 1700 -775 50  0001 C CNN
-F 3 "~" H 1700 -775 50  0001 C CNN
-	1    1700 -775
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:D D?
@@ -93,36 +56,6 @@ F 3 "~" H 3375 1450 50  0001 C CNN
 	1    3375 1450
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2750 -675 2750 -575
-$Comp
-L Eurorack:HEADER_2x5_Doepfer P?
-U 1 1 5D631512
-P 3000 -575
-AR Path="/5D631512" Ref="P?"  Part="1" 
-AR Path="/5D60ED9A/5D631512" Ref="P201"  Part="1" 
-AR Path="/5CD6EBF4/5D631512" Ref="P301"  Part="1" 
-F 0 "P301" H 3000 -1073 40  0000 C CNN
-F 1 "HEADER_2x5_Doepfer" H 3000 -997 40  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3000 -906 60  0000 C CNN
-F 3 "" H 3000 -575 60  0000 C CNN
-	1    3000 -575
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2750 -675 2850 -675
-Wire Wire Line
-	2850 -575 2750 -575
-Connection ~ 2750 -575
-Wire Wire Line
-	2750 -575 2750 -475
-Wire Wire Line
-	2850 -475 2750 -475
-Connection ~ 2750 -475
-Wire Wire Line
-	2750 -375 2850 -375
-Wire Wire Line
-	3150 -375 3250 -375
 $Comp
 L Transistor_BJT:BC337 Q301
 U 1 1 5D636B86
@@ -169,20 +102,6 @@ Wire Wire Line
 	3725 1450 4050 1450
 Wire Wire Line
 	3725 1450 3725 1475
-Wire Wire Line
-	3125 -475 3150 -475
-Connection ~ 3150 -475
-Wire Wire Line
-	3150 -775 3250 -775
-Wire Wire Line
-	2750 -775 2750 -850
-Wire Wire Line
-	2750 -850 3250 -850
-Wire Wire Line
-	3250 -850 3250 -775
-Connection ~ 2750 -775
-Wire Wire Line
-	2750 -775 2850 -775
 Wire Wire Line
 	3725 1800 3725 1775
 Wire Wire Line
@@ -259,22 +178,6 @@ F 3 "" H 4050 1800 50  0001 C CNN
 	1    4050 1800
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5D64AC58
-P 3300 -475
-AR Path="/5D64AC58" Ref="#PWR?"  Part="1" 
-AR Path="/5D60ED9A/5D64AC58" Ref="#PWR0203"  Part="1" 
-AR Path="/5CD6EBF4/5D64AC58" Ref="#PWR0303"  Part="1" 
-F 0 "#PWR0303" H 3300 -725 50  0001 C CNN
-F 1 "GND" H 3400 -400 50  0000 C CNN
-F 2 "" H 3300 -475 50  0001 C CNN
-F 3 "" H 3300 -475 50  0001 C CNN
-	1    3300 -475
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3150 -475 3300 -475
 Text GLabel 3025 1150 0    50   Input ~ 0
 +12Vb
 Wire Wire Line
@@ -729,8 +632,6 @@ Connection ~ 4425 800
 Wire Wire Line
 	5075 800  4875 800 
 Wire Wire Line
-	3150 -675 3150 -575
-Wire Wire Line
 	2825 5575 3025 5575
 Wire Wire Line
 	2450 4850 2075 4850
@@ -791,9 +692,6 @@ Wire Wire Line
 Connection ~ 2450 4475
 Wire Wire Line
 	2450 4475 2450 4375
-Connection ~ 3150 -575
-Wire Wire Line
-	3150 -575 3150 -475
 Text GLabel 2225 1275 2    50   Input ~ 0
 +12Vb
 Wire Wire Line
@@ -1411,7 +1309,7 @@ AR Path="/5D02D835" Ref="J?"  Part="1"
 AR Path="/5D60ED9A/5D02D835" Ref="J?"  Part="1" 
 AR Path="/5CD6EBF4/5D02D835" Ref="J304"  Part="1" 
 F 0 "J304" H 6792 971 50  0000 R CNN
-F 1 "In" H 6792 880 50  0000 R CNN
+F 1 "CV_time" H 6792 880 50  0000 R CNN
 F 2 "AJ-Dropbox-Kicad:PJ301SM" H 7025 900 50  0001 C CNN
 F 3 "~" H 7025 900 50  0001 C CNN
 	1    7025 900 
@@ -1524,10 +1422,6 @@ Wire Wire Line
 Wire Wire Line
 	5400 1800 5400 1700
 Wire Wire Line
-	1700 -775 2750 -775
-Wire Wire Line
-	1500 -475 2750 -475
-Wire Wire Line
 	3200 1300 3200 1150
 Wire Wire Line
 	3025 1150 3200 1150
@@ -1550,10 +1444,10 @@ Connection ~ 3375 1800
 Wire Wire Line
 	3375 1800 3725 1800
 $Comp
-L power:+5VA #PWR?
+L power:+5VA #PWR0110
 U 1 1 5D0C80A2
 P 5075 800
-F 0 "#PWR?" H 5075 650 50  0001 C CNN
+F 0 "#PWR0110" H 5075 650 50  0001 C CNN
 F 1 "+5VA" H 5090 973 50  0000 C CNN
 F 2 "" H 5075 800 50  0001 C CNN
 F 3 "" H 5075 800 50  0001 C CNN
