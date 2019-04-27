@@ -389,8 +389,6 @@ F 3 "~" H 2450 5025 50  0001 C CNN
 	1    2450 5025
 	1    0    0    1   
 $EndComp
-Wire Wire Line
-	2150 5650 2200 5650
 $Comp
 L power:GNDA #PWR?
 U 1 1 5D650219
@@ -620,7 +618,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 5025 2825 5025
 Connection ~ 2825 5025
-Text Notes 1075 5150 0    50   ~ 0
+Text Notes 1825 5700 0    50   ~ 0
 Voltage divider for \nVbe between 0 \nand 0,65v on the input
 Text Notes 1425 4725 0    50   ~ 0
 Anti latchup\n100K*1u = 1s
@@ -686,8 +684,8 @@ $Comp
 L Connector:Conn_01x03_Male J302
 U 1 1 5C76AAB7
 P 5650 950
-F 0 "J302" H 5623 830 50  0000 R CNN
-F 1 "Conn_01x03_Male" H 5623 921 50  0000 R CNN
+F 0 "J302" V 5623 830 50  0000 R CNN
+F 1 "+5V reg/doepfer" V 5500 1275 50  0000 R CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5650 950 50  0001 C CNN
 F 3 "~" H 5650 950 50  0001 C CNN
 	1    5650 950 
@@ -860,6 +858,8 @@ $Comp
 L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5CDCDF9D
 P 1375 1475
+AR Path="/5CDCDF9D" Ref="#PWR?"  Part="1" 
+AR Path="/5CD6EBF4/5CDCDF9D" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1375 1225 50  0001 C CNN
 F 1 "GND" H 1380 1302 50  0000 C CNN
 F 2 "" H 1375 1475 50  0001 C CNN
@@ -871,6 +871,8 @@ $Comp
 L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
 U 1 1 5CDCDF97
 P 2375 1475
+AR Path="/5CDCDF97" Ref="#PWR?"  Part="1" 
+AR Path="/5CD6EBF4/5CDCDF97" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 2375 1225 50  0001 C CNN
 F 1 "GND" H 2380 1302 50  0000 C CNN
 F 2 "" H 2375 1475 50  0001 C CNN
@@ -882,6 +884,8 @@ $Comp
 L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
 U 1 1 5CDCDF79
 P 1525 1175
+AR Path="/5CDCDF79" Ref="#PWR?"  Part="1" 
+AR Path="/5CD6EBF4/5CDCDF79" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1525 1025 50  0001 C CNN
 F 1 "+5V" V 1540 1303 50  0000 L CNN
 F 2 "" H 1525 1175 50  0001 C CNN
@@ -906,6 +910,8 @@ $Comp
 L Eurorack:Doepfer_Power_16pin P?
 U 1 1 5CDCDF6D
 P 1875 1375
+AR Path="/5CDCDF6D" Ref="P?"  Part="1" 
+AR Path="/5CD6EBF4/5CDCDF6D" Ref="P?"  Part="1" 
 F 0 "P?" H 2425 875 50  0000 C CNN
 F 1 "Doepfer_Power_16pin" H 2000 1925 50  0000 C CNN
 F 2 "Connectors_IDC:IDC-Header_2x08_Pitch2.54mm_Straight" H 1875 1375 50  0001 C CNN
@@ -1429,4 +1435,114 @@ Wire Wire Line
 Wire Wire Line
 	4925 3650 4925 3550
 Connection ~ 4925 3650
+$Comp
+L Connector:AudioJack2 J?
+U 1 1 5D02D835
+P 7025 900
+AR Path="/5D02D835" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5D02D835" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5D02D835" Ref="J?"  Part="1" 
+F 0 "J?" H 6792 971 50  0000 R CNN
+F 1 "In" H 6792 880 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 7025 900 50  0001 C CNN
+F 3 "~" H 7025 900 50  0001 C CNN
+	1    7025 900 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6525 900  6825 900 
+Wire Wire Line
+	6825 800  6675 800 
+Wire Wire Line
+	6675 800  6675 1200
+Text GLabel 6525 900  0    50   Input ~ 0
+CV
+Connection ~ 6675 1200
+Text GLabel 5750 2250 2    50   Input ~ 0
+CV_B
+Text GLabel 5525 2250 0    50   Input ~ 0
+CV
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5D03554B
+P 5700 2050
+F 0 "J?" V 5673 1930 50  0000 R CNN
+F 1 "CV doepfer" V 5625 2450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5700 2050 50  0001 C CNN
+F 3 "~" H 5700 2050 50  0001 C CNN
+	1    5700 2050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5525 2250 5600 2250
+Wire Wire Line
+	5700 2250 5750 2250
+Text GLabel 1075 4850 0    50   Input ~ 0
+CV_B
+$Comp
+L Device:R R?
+U 1 1 5D0480EE
+P 1375 5100
+AR Path="/5D0480EE" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D0480EE" Ref="R?"  Part="1" 
+AR Path="/5CD6EBF4/5D0480EE" Ref="R?"  Part="1" 
+F 0 "R?" V 1168 5100 50  0000 C CNN
+F 1 "2k2" V 1259 5100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1305 5100 50  0001 C CNN
+F 3 "~" H 1375 5100 50  0001 C CNN
+	1    1375 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5D0480F5
+P 1225 4850
+AR Path="/5D0480F5" Ref="D?"  Part="1" 
+AR Path="/5CD3F059/5D0480F5" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5D0480F5" Ref="D?"  Part="1" 
+F 0 "D?" H 1275 4975 50  0000 C CNN
+F 1 "VactrolLED" H 1375 4900 50  0000 C CNN
+F 2 "LED_THT:LED_D3.0mm" H 1225 4850 50  0001 C CNN
+F 3 "~" H 1225 4850 50  0001 C CNN
+	1    1225 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1375 4850 1375 4950
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D04F7B4
+P 1375 5350
+AR Path="/5D04F7B4" Ref="#PWR?"  Part="1" 
+AR Path="/5D60ED9A/5D04F7B4" Ref="#PWR?"  Part="1" 
+AR Path="/5CD6EBF4/5D04F7B4" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1375 5100 50  0001 C CNN
+F 1 "GNDA" H 1380 5177 50  0000 C CNN
+F 2 "" H 1375 5350 50  0001 C CNN
+F 3 "" H 1375 5350 50  0001 C CNN
+	1    1375 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1375 5250 1375 5350
+$Comp
+L Sensor_Optical:LDR03 R?
+U 1 1 5D057F8E
+P 1825 5025
+F 0 "R?" H 1895 5071 50  0000 L CNN
+F 1 "VactrolLDR03" H 1895 4980 50  0000 L CNN
+F 2 "OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical" V 2000 5025 50  0001 C CNN
+F 3 "http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf" H 1825 4975 50  0001 C CNN
+	1    1825 5025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1825 4875 1825 4850
+Wire Wire Line
+	1825 4850 2075 4850
+Wire Wire Line
+	1825 5175 1825 5225
+Wire Wire Line
+	1825 5225 2075 5225
+Connection ~ 2075 5225
 $EndSCHEMATC
