@@ -1344,7 +1344,7 @@ Wire Wire Line
 Wire Wire Line
 	5700 2250 5750 2250
 Text GLabel 1075 4850 0    50   Input ~ 0
-CV_B
+CV
 $Comp
 L Device:R R?
 U 1 1 5D0480EE
@@ -1454,4 +1454,6 @@ F 3 "" H 5075 800 50  0001 C CNN
 	1    5075 800 
 	1    0    0    -1  
 $EndComp
+Text GLabel 5075 1150 1    50   Input ~ 0
+5Vreg
 $EndSCHEMATC
