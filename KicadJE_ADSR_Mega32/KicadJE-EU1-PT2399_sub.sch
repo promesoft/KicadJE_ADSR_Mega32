@@ -567,9 +567,9 @@ Connection ~ 6675 1600
 Wire Wire Line
 	6675 1200 6675 1600
 Text GLabel 6525 1300 0    50   Input ~ 0
-In
+In2399
 Text GLabel 6525 1700 0    50   Input ~ 0
-Out
+Out2399
 $Comp
 L power:GNDA #PWR0305
 U 1 1 5C768062
@@ -1018,7 +1018,7 @@ Wire Wire Line
 Wire Wire Line
 	7325 4025 7425 4025
 Text GLabel 8375 3675 2    50   Input ~ 0
-In
+In2399
 Wire Wire Line
 	7325 4275 7425 4275
 Wire Wire Line
@@ -1135,7 +1135,7 @@ Wire Wire Line
 Wire Wire Line
 	5575 3650 5650 3650
 Text GLabel 5650 3650 2    50   Input ~ 0
-Out
+Out2399
 $Comp
 L Device:CP_Small C311
 U 1 1 5D6AE6F9
