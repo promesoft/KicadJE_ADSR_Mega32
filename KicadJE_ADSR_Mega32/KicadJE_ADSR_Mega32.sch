@@ -145,19 +145,19 @@ U 5CD3F059
 F0 "ATMega32A.sch" 50
 F1 "ATMega32A.sch" 50
 $EndSheet
-Text GLabel 8250 1000 0    50   Input ~ 0
-1
-Text GLabel 8250 1250 0    50   Input ~ 0
-2_INT2
-Text GLabel 8250 1500 0    50   Input ~ 0
-3_PWM
-Text GLabel 8625 2050 3    50   Input ~ 0
-4_PWM
-Text GLabel 9425 2050 3    50   Input ~ 0
-5_MOSI
-Text GLabel 11000 2050 3    50   Input ~ 0
-7_SCK
 Text GLabel 10200 2050 3    50   Input ~ 0
+1
+Text GLabel 7075 1225 0    50   Input ~ 0
+2_INT2
+Text GLabel 7075 1475 0    50   Input ~ 0
+3_PWM
+Text GLabel 6550 1300 0    50   Input ~ 0
+4_PWM
+Text GLabel 6550 1150 0    50   Input ~ 0
+5_MOSI
+Text GLabel 6550 775  0    50   Input ~ 0
+7_SCK
+Text GLabel 6550 950  0    50   Input ~ 0
 6_MISO
 $Comp
 L Device:R R101
@@ -174,7 +174,7 @@ F 3 "~" H 8625 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8625 1900 8625 2050
-Text GLabel 8250 750  0    50   Input ~ 0
+Text GLabel 11000 2050 3    50   Input ~ 0
 0_LED
 Wire Wire Line
 	8250 1500 8325 1500
@@ -593,4 +593,16 @@ F 3 "" H 1975 3150 50  0001 C CNN
 	1    1975 3150
 	1    0    0    -1  
 $EndComp
+Text GLabel 8250 750  0    50   Input ~ 0
+18
+Text GLabel 8250 1000 0    50   Input ~ 0
+19
+Text GLabel 8250 1250 0    50   Input ~ 0
+20
+Text GLabel 8250 1500 0    50   Input ~ 0
+21
+Text GLabel 8625 2050 3    50   Input ~ 0
+22
+Text GLabel 9425 2050 3    50   Input ~ 0
+23
 $EndSCHEMATC
