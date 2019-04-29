@@ -1069,20 +1069,324 @@ F 3 "" H 3250 7350 50  0001 C CNN
 	1    3250 7350
 	1    0    0    -1  
 $EndComp
-Text GLabel 1025 2600 0    50   Input ~ 0
+Text GLabel 3200 725  0    50   Input ~ 0
 25_A1
-Text GLabel 1025 2700 0    50   Input ~ 0
+Text GLabel 3750 725  0    50   Input ~ 0
 26_A2
-Text GLabel 1025 2800 0    50   Input ~ 0
+Text GLabel 4300 725  0    50   Input ~ 0
 27_A3
-Text GLabel 1025 2900 0    50   Input ~ 0
+Text GLabel 4950 725  0    50   Input ~ 0
 28_A4
-Text GLabel 1025 3000 0    50   Input ~ 0
+Text GLabel 5525 725  0    50   Input ~ 0
 29_A5
-Text GLabel 1025 3100 0    50   Input ~ 0
+Text GLabel 6075 725  0    50   Input ~ 0
 30_A6
-Text GLabel 1025 3200 0    50   Input ~ 0
+Text GLabel 6625 725  0    50   Input ~ 0
 31_A7
-Text GLabel 1025 2500 0    50   Input ~ 0
+Text GLabel 2625 725  0    50   Input ~ 0
 24_A0
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD2AEF6
+P 2850 725
+AR Path="/5CD2AEF6" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD2AEF6" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD2AEF6" Ref="RV?"  Part="1" 
+F 0 "RV?" H 2850 850 50  0000 R CNN
+F 1 "100k" V 2975 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 2850 725 50  0001 C CNN
+F 3 "~" H 2850 725 50  0001 C CNN
+	1    2850 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD38BA5
+P 2850 575
+F 0 "#PWR?" H 2850 425 50  0001 C CNN
+F 1 "+5V" H 2865 703 50  0000 L CNN
+F 2 "" H 2850 575 50  0001 C CNN
+F 3 "" H 2850 575 50  0001 C CNN
+	1    2850 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD394AD
+P 2850 875
+F 0 "#PWR?" H 2850 625 50  0001 C CNN
+F 1 "GND" H 2855 702 50  0000 C CNN
+F 2 "" H 2850 875 50  0001 C CNN
+F 3 "" H 2850 875 50  0001 C CNN
+	1    2850 875 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD3AB7B
+P 3400 725
+AR Path="/5CD3AB7B" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD3AB7B" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD3AB7B" Ref="RV?"  Part="1" 
+F 0 "RV?" H 3400 850 50  0000 R CNN
+F 1 "100k" V 3525 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 3400 725 50  0001 C CNN
+F 3 "~" H 3400 725 50  0001 C CNN
+	1    3400 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD3AB81
+P 3400 575
+F 0 "#PWR?" H 3400 425 50  0001 C CNN
+F 1 "+5V" H 3415 703 50  0000 L CNN
+F 2 "" H 3400 575 50  0001 C CNN
+F 3 "" H 3400 575 50  0001 C CNN
+	1    3400 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD3AB87
+P 3400 875
+F 0 "#PWR?" H 3400 625 50  0001 C CNN
+F 1 "GND" H 3405 702 50  0000 C CNN
+F 2 "" H 3400 875 50  0001 C CNN
+F 3 "" H 3400 875 50  0001 C CNN
+	1    3400 875 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD3ED6B
+P 3950 725
+AR Path="/5CD3ED6B" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD3ED6B" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD3ED6B" Ref="RV?"  Part="1" 
+F 0 "RV?" H 3950 850 50  0000 R CNN
+F 1 "100k" V 4075 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 3950 725 50  0001 C CNN
+F 3 "~" H 3950 725 50  0001 C CNN
+	1    3950 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD3ED71
+P 3950 575
+F 0 "#PWR?" H 3950 425 50  0001 C CNN
+F 1 "+5V" H 3965 703 50  0000 L CNN
+F 2 "" H 3950 575 50  0001 C CNN
+F 3 "" H 3950 575 50  0001 C CNN
+	1    3950 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD3ED77
+P 3950 875
+F 0 "#PWR?" H 3950 625 50  0001 C CNN
+F 1 "GND" H 3955 702 50  0000 C CNN
+F 2 "" H 3950 875 50  0001 C CNN
+F 3 "" H 3950 875 50  0001 C CNN
+	1    3950 875 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD42915
+P 4500 725
+AR Path="/5CD42915" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD42915" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD42915" Ref="RV?"  Part="1" 
+F 0 "RV?" H 4500 850 50  0000 R CNN
+F 1 "100k" V 4625 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 4500 725 50  0001 C CNN
+F 3 "~" H 4500 725 50  0001 C CNN
+	1    4500 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD4291B
+P 4500 575
+F 0 "#PWR?" H 4500 425 50  0001 C CNN
+F 1 "+5V" H 4515 703 50  0000 L CNN
+F 2 "" H 4500 575 50  0001 C CNN
+F 3 "" H 4500 575 50  0001 C CNN
+	1    4500 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD42921
+P 4500 875
+F 0 "#PWR?" H 4500 625 50  0001 C CNN
+F 1 "GND" H 4505 702 50  0000 C CNN
+F 2 "" H 4500 875 50  0001 C CNN
+F 3 "" H 4500 875 50  0001 C CNN
+	1    4500 875 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 725  3250 725 
+Wire Wire Line
+	3750 725  3800 725 
+Wire Wire Line
+	4300 725  4350 725 
+Wire Wire Line
+	2625 725  2700 725 
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD62628
+P 5175 725
+AR Path="/5CD62628" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD62628" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD62628" Ref="RV?"  Part="1" 
+F 0 "RV?" H 5175 850 50  0000 R CNN
+F 1 "100k" V 5300 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 5175 725 50  0001 C CNN
+F 3 "~" H 5175 725 50  0001 C CNN
+	1    5175 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD62632
+P 5175 575
+F 0 "#PWR?" H 5175 425 50  0001 C CNN
+F 1 "+5V" H 5190 703 50  0000 L CNN
+F 2 "" H 5175 575 50  0001 C CNN
+F 3 "" H 5175 575 50  0001 C CNN
+	1    5175 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD6263C
+P 5175 875
+F 0 "#PWR?" H 5175 625 50  0001 C CNN
+F 1 "GND" H 5180 702 50  0000 C CNN
+F 2 "" H 5175 875 50  0001 C CNN
+F 3 "" H 5175 875 50  0001 C CNN
+	1    5175 875 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD62646
+P 5725 725
+AR Path="/5CD62646" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD62646" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD62646" Ref="RV?"  Part="1" 
+F 0 "RV?" H 5725 850 50  0000 R CNN
+F 1 "100k" V 5850 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 5725 725 50  0001 C CNN
+F 3 "~" H 5725 725 50  0001 C CNN
+	1    5725 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD62650
+P 5725 575
+F 0 "#PWR?" H 5725 425 50  0001 C CNN
+F 1 "+5V" H 5740 703 50  0000 L CNN
+F 2 "" H 5725 575 50  0001 C CNN
+F 3 "" H 5725 575 50  0001 C CNN
+	1    5725 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD6265A
+P 5725 875
+F 0 "#PWR?" H 5725 625 50  0001 C CNN
+F 1 "GND" H 5730 702 50  0000 C CNN
+F 2 "" H 5725 875 50  0001 C CNN
+F 3 "" H 5725 875 50  0001 C CNN
+	1    5725 875 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD62664
+P 6275 725
+AR Path="/5CD62664" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD62664" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD62664" Ref="RV?"  Part="1" 
+F 0 "RV?" H 6275 850 50  0000 R CNN
+F 1 "100k" V 6400 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 6275 725 50  0001 C CNN
+F 3 "~" H 6275 725 50  0001 C CNN
+	1    6275 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD6266E
+P 6275 575
+F 0 "#PWR?" H 6275 425 50  0001 C CNN
+F 1 "+5V" H 6290 703 50  0000 L CNN
+F 2 "" H 6275 575 50  0001 C CNN
+F 3 "" H 6275 575 50  0001 C CNN
+	1    6275 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD62678
+P 6275 875
+F 0 "#PWR?" H 6275 625 50  0001 C CNN
+F 1 "GND" H 6280 702 50  0000 C CNN
+F 2 "" H 6275 875 50  0001 C CNN
+F 3 "" H 6275 875 50  0001 C CNN
+	1    6275 875 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT RV?
+U 1 1 5CD62682
+P 6825 725
+AR Path="/5CD62682" Ref="RV?"  Part="1" 
+AR Path="/5D60ED9A/5CD62682" Ref="RV?"  Part="1" 
+AR Path="/5CD6EBF4/5CD62682" Ref="RV?"  Part="1" 
+F 0 "RV?" H 6825 850 50  0000 R CNN
+F 1 "100k" V 6950 675 50  0000 R CNN
+F 2 "Potentiometer_THT:Potentiometer_China_RK09_Single_Vertical_AJ" H 6825 725 50  0001 C CNN
+F 3 "~" H 6825 725 50  0001 C CNN
+	1    6825 725 
+	-1   0    0    1   
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CD6268C
+P 6825 575
+F 0 "#PWR?" H 6825 425 50  0001 C CNN
+F 1 "+5V" H 6840 703 50  0000 L CNN
+F 2 "" H 6825 575 50  0001 C CNN
+F 3 "" H 6825 575 50  0001 C CNN
+	1    6825 575 
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CD62696
+P 6825 875
+F 0 "#PWR?" H 6825 625 50  0001 C CNN
+F 1 "GND" H 6830 702 50  0000 C CNN
+F 2 "" H 6825 875 50  0001 C CNN
+F 3 "" H 6825 875 50  0001 C CNN
+	1    6825 875 
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5525 725  5575 725 
+Wire Wire Line
+	6075 725  6125 725 
+Wire Wire Line
+	6625 725  6675 725 
+Wire Wire Line
+	4950 725  5025 725 
 $EndSCHEMATC
