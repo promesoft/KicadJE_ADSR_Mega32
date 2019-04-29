@@ -538,59 +538,59 @@ $EndSheet
 $Comp
 L Connector:AudioJack2 J101
 U 1 1 5CD77BFD
-P 2325 2650
+P 1675 6775
 AR Path="/5CD77BFD" Ref="J101"  Part="1" 
 AR Path="/5D60ED9A/5CD77BFD" Ref="J?"  Part="1" 
 AR Path="/5CD6EBF4/5CD77BFD" Ref="J?"  Part="1" 
-F 0 "J101" H 2092 2721 50  0000 R CNN
-F 1 "In" H 2092 2630 50  0000 R CNN
-F 2 "AJ-Dropbox-Kicad:PJ301SM" H 2325 2650 50  0001 C CNN
-F 3 "~" H 2325 2650 50  0001 C CNN
-	1    2325 2650
+F 0 "J101" H 1442 6846 50  0000 R CNN
+F 1 "ADSR1" H 1442 6755 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 1675 6775 50  0001 C CNN
+F 3 "~" H 1675 6775 50  0001 C CNN
+	1    1675 6775
 	-1   0    0    -1  
 $EndComp
 $Comp
 L Connector:AudioJack2 J102
 U 1 1 5CD77C03
-P 2325 3050
+P 1675 7175
 AR Path="/5CD77C03" Ref="J102"  Part="1" 
 AR Path="/5D60ED9A/5CD77C03" Ref="J?"  Part="1" 
 AR Path="/5CD6EBF4/5CD77C03" Ref="J?"  Part="1" 
-F 0 "J102" H 2092 3121 50  0000 R CNN
-F 1 "Out" H 2092 3030 50  0000 R CNN
-F 2 "AJ-Dropbox-Kicad:PJ301SM" H 2325 3050 50  0001 C CNN
-F 3 "~" H 2325 3050 50  0001 C CNN
-	1    2325 3050
+F 0 "J102" H 1442 7246 50  0000 R CNN
+F 1 "ADSR2" H 1442 7155 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 1675 7175 50  0001 C CNN
+F 3 "~" H 1675 7175 50  0001 C CNN
+	1    1675 7175
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1825 3050 2125 3050
+	1175 7175 1475 7175
 Wire Wire Line
-	1825 2650 2125 2650
+	1175 6775 1475 6775
 Wire Wire Line
-	2125 2550 1975 2550
+	1475 6675 1325 6675
 Wire Wire Line
-	2125 2950 1975 2950
+	1475 7075 1325 7075
 Wire Wire Line
-	1975 3150 1975 2950
-Connection ~ 1975 2950
+	1325 7275 1325 7075
+Connection ~ 1325 7075
 Wire Wire Line
-	1975 2550 1975 2950
-Text GLabel 1825 2650 0    50   Input ~ 0
-In
-Text GLabel 1825 3050 0    50   Input ~ 0
-Out
+	1325 6675 1325 7075
+Text GLabel 1175 6775 0    50   Input ~ 0
+ADSR1
+Text GLabel 1175 7175 0    50   Input ~ 0
+ADSR2
 $Comp
 L power:GNDA #PWR?
 U 1 1 5CD77C12
-P 1975 3150
+P 1325 7275
 AR Path="/5CD6EBF4/5CD77C12" Ref="#PWR?"  Part="1" 
 AR Path="/5CD77C12" Ref="#PWR0109"  Part="1" 
-F 0 "#PWR0109" H 1975 2900 50  0001 C CNN
-F 1 "GNDA" H 1980 2977 50  0000 C CNN
-F 2 "" H 1975 3150 50  0001 C CNN
-F 3 "" H 1975 3150 50  0001 C CNN
-	1    1975 3150
+F 0 "#PWR0109" H 1325 7025 50  0001 C CNN
+F 1 "GNDA" H 1330 7102 50  0000 C CNN
+F 2 "" H 1325 7275 50  0001 C CNN
+F 3 "" H 1325 7275 50  0001 C CNN
+	1    1325 7275
 	1    0    0    -1  
 $EndComp
 Text GLabel 8250 750  0    50   Input ~ 0
@@ -605,4 +605,212 @@ Text GLabel 8625 2050 3    50   Input ~ 0
 22
 Text GLabel 9425 2050 3    50   Input ~ 0
 23
+Text GLabel 950  2775 0    50   Input ~ 0
+10_INT0
+Text GLabel 950  3300 0    50   Input ~ 0
+11_INT1
+Text GLabel 1025 2025 0    50   Input ~ 0
+12_PWM
+Text GLabel 1025 2125 0    50   Input ~ 0
+13_PWM
+Text GLabel 1025 2225 0    50   Input ~ 0
+14_PWM
+Text GLabel 1025 2325 0    50   Input ~ 0
+15_PWM
+Text GLabel 1150 2125 2    50   Input ~ 0
+ADSR2
+Text GLabel 1150 2025 2    50   Input ~ 0
+ADSR1
+Wire Wire Line
+	1150 2025 1025 2025
+Wire Wire Line
+	1150 2125 1025 2125
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5CC767B3
+P 1675 5925
+AR Path="/5CC767B3" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5CC767B3" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CC767B3" Ref="J?"  Part="1" 
+F 0 "J?" H 1442 5996 50  0000 R CNN
+F 1 "ADSR1-G8" H 1442 5905 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 1675 5925 50  0001 C CNN
+F 3 "~" H 1675 5925 50  0001 C CNN
+	1    1675 5925
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_SwitchT J?
+U 1 1 5CC77DC8
+P 1675 6325
+AR Path="/5CC77DC8" Ref="J?"  Part="1" 
+AR Path="/5D60ED9A/5CC77DC8" Ref="J?"  Part="1" 
+AR Path="/5CD6EBF4/5CC77DC8" Ref="J?"  Part="1" 
+F 0 "J?" H 1442 6396 50  0000 R CNN
+F 1 "ADSR2-G8" H 1442 6305 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 1675 6325 50  0001 C CNN
+F 3 "~" H 1675 6325 50  0001 C CNN
+	1    1675 6325
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1225 5925 1475 5925
+Wire Wire Line
+	1225 6325 1475 6325
+Wire Wire Line
+	1475 5825 1325 5825
+Wire Wire Line
+	1325 5825 1325 6025
+Connection ~ 1325 6675
+Wire Wire Line
+	1475 6425 1325 6425
+Connection ~ 1325 6425
+Wire Wire Line
+	1325 6425 1325 6675
+Wire Wire Line
+	1475 6225 1325 6225
+Connection ~ 1325 6225
+Wire Wire Line
+	1325 6225 1325 6425
+Wire Wire Line
+	1475 6025 1325 6025
+Connection ~ 1325 6025
+Wire Wire Line
+	1325 6025 1325 6225
+Text GLabel 1725 3300 2    50   Input ~ 0
+ADSR2-G8
+Text GLabel 1725 2775 2    50   Input ~ 0
+ADSR1-G8
+$Comp
+L Device:D D?
+U 1 1 5CC9F5AF
+P 1350 3450
+AR Path="/5CC9F5AF" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CC9F5AF" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CC9F5AF" Ref="D?"  Part="1" 
+F 0 "D?" V 1304 3529 50  0000 L CNN
+F 1 "1N1007" V 1395 3529 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 1350 3450 50  0001 C CNN
+F 3 "~" H 1350 3450 50  0001 C CNN
+	1    1350 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CCA20A0
+P 1350 3150
+AR Path="/5CCA20A0" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CCA20A0" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CCA20A0" Ref="D?"  Part="1" 
+F 0 "D?" V 1304 3229 50  0000 L CNN
+F 1 "1N1007" V 1395 3229 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 1350 3150 50  0001 C CNN
+F 3 "~" H 1350 3150 50  0001 C CNN
+	1    1350 3150
+	0    1    1    0   
+$EndComp
+Connection ~ 1350 3300
+$Comp
+L Device:D D?
+U 1 1 5CCA251F
+P 1450 2925
+AR Path="/5CCA251F" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CCA251F" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CCA251F" Ref="D?"  Part="1" 
+F 0 "D?" V 1404 3004 50  0000 L CNN
+F 1 "1N1007" V 1495 3004 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 1450 2925 50  0001 C CNN
+F 3 "~" H 1450 2925 50  0001 C CNN
+	1    1450 2925
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5CCA295D
+P 1450 2625
+AR Path="/5CCA295D" Ref="D?"  Part="1" 
+AR Path="/5D60ED9A/5CCA295D" Ref="D?"  Part="1" 
+AR Path="/5CD6EBF4/5CCA295D" Ref="D?"  Part="1" 
+F 0 "D?" V 1404 2704 50  0000 L CNN
+F 1 "1N1007" V 1495 2704 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 1450 2625 50  0001 C CNN
+F 3 "~" H 1450 2625 50  0001 C CNN
+	1    1450 2625
+	0    1    1    0   
+$EndComp
+Connection ~ 1450 2775
+Wire Wire Line
+	1450 2775 1725 2775
+Wire Wire Line
+	1350 3300 1725 3300
+Wire Wire Line
+	1350 3000 1350 2475
+Wire Wire Line
+	1350 2475 1400 2475
+Wire Wire Line
+	1450 3075 1450 3600
+Wire Wire Line
+	1450 3600 1400 3600
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+5V #PWR?
+U 1 1 5CCA9495
+P 1400 2475
+F 0 "#PWR?" H 1400 2325 50  0001 C CNN
+F 1 "+5V" V 1415 2603 50  0000 L CNN
+F 2 "" H 1400 2475 50  0001 C CNN
+F 3 "" H 1400 2475 50  0001 C CNN
+	1    1400 2475
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1400 2475
+Wire Wire Line
+	1400 2475 1450 2475
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5CCAA02B
+P 1400 3600
+F 0 "#PWR?" H 1400 3350 50  0001 C CNN
+F 1 "GND" H 1405 3427 50  0000 C CNN
+F 2 "" H 1400 3600 50  0001 C CNN
+F 3 "" H 1400 3600 50  0001 C CNN
+	1    1400 3600
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1400 3600
+Wire Wire Line
+	1400 3600 1350 3600
+$Comp
+L Device:R R?
+U 1 1 5CCAA4E2
+P 1150 2775
+AR Path="/5CCAA4E2" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CCAA4E2" Ref="R?"  Part="1" 
+F 0 "R?" V 943 2775 50  0000 C CNN
+F 1 "1k" V 1034 2775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 2775 50  0001 C CNN
+F 3 "~" H 1150 2775 50  0001 C CNN
+	1    1150 2775
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	950  2775 1000 2775
+Wire Wire Line
+	950  3300 1000 3300
+Wire Wire Line
+	1300 2775 1450 2775
+$Comp
+L Device:R R?
+U 1 1 5CCB99D6
+P 1150 3300
+AR Path="/5CCB99D6" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CCB99D6" Ref="R?"  Part="1" 
+F 0 "R?" V 943 3300 50  0000 C CNN
+F 1 "1k" V 1034 3300 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 3300 50  0001 C CNN
+F 3 "~" H 1150 3300 50  0001 C CNN
+	1    1150 3300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1300 3300 1350 3300
 $EndSCHEMATC
