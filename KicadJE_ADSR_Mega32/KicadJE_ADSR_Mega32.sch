@@ -195,12 +195,6 @@ Wire Wire Line
 	8250 1000 8325 1000
 Wire Wire Line
 	8250 1250 8325 1250
-Text GLabel 9050 1000 0    50   Input ~ 0
-1
-Text GLabel 9050 1250 0    50   Input ~ 0
-2_INT2
-Text GLabel 9050 1500 0    50   Input ~ 0
-3_PWM
 $Comp
 L Device:R R102
 U 1 1 5CD5E9A7
@@ -216,8 +210,6 @@ F 3 "~" H 9425 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9425 1900 9425 2050
-Text GLabel 9050 750  0    50   Input ~ 0
-0_LED
 Wire Wire Line
 	9050 1500 9125 1500
 Wire Wire Line
@@ -226,12 +218,6 @@ Wire Wire Line
 	9050 1000 9125 1000
 Wire Wire Line
 	9050 1250 9125 1250
-Text GLabel 9825 1000 0    50   Input ~ 0
-1
-Text GLabel 9825 1250 0    50   Input ~ 0
-2_INT2
-Text GLabel 9825 1500 0    50   Input ~ 0
-3_PWM
 $Comp
 L Device:R R103
 U 1 1 5CD60C6C
@@ -247,8 +233,6 @@ F 3 "~" H 10200 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	10200 1900 10200 2050
-Text GLabel 9825 750  0    50   Input ~ 0
-0_LED
 Wire Wire Line
 	9825 1500 9900 1500
 Wire Wire Line
@@ -257,12 +241,6 @@ Wire Wire Line
 	9825 1000 9900 1000
 Wire Wire Line
 	9825 1250 9900 1250
-Text GLabel 10625 1000 0    50   Input ~ 0
-1
-Text GLabel 10625 1250 0    50   Input ~ 0
-2_INT2
-Text GLabel 10625 1500 0    50   Input ~ 0
-3_PWM
 $Comp
 L Device:R R104
 U 1 1 5CD63ADC
@@ -278,8 +256,6 @@ F 3 "~" H 11000 1750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11000 1900 11000 2050
-Text GLabel 10625 750  0    50   Input ~ 0
-0_LED
 Wire Wire Line
 	10625 1500 10700 1500
 Wire Wire Line
@@ -1554,4 +1530,28 @@ F 3 "~" H 3450 2375 50  0001 C CNN
 	1    3450 2375
 	0    -1   -1   0   
 $EndComp
+Text GLabel 9050 1250 0    50   Input ~ 0
+20
+Text GLabel 9050 1500 0    50   Input ~ 0
+21
+Text GLabel 9050 1000 0    50   Input ~ 0
+19
+Text GLabel 9825 1250 0    50   Input ~ 0
+20
+Text GLabel 9825 1500 0    50   Input ~ 0
+21
+Text GLabel 9825 1000 0    50   Input ~ 0
+19
+Text GLabel 10625 1250 0    50   Input ~ 0
+20
+Text GLabel 10625 1500 0    50   Input ~ 0
+21
+Text GLabel 10625 1000 0    50   Input ~ 0
+19
+Text GLabel 9050 750  0    50   Input ~ 0
+18
+Text GLabel 9825 750  0    50   Input ~ 0
+18
+Text GLabel 10625 750  0    50   Input ~ 0
+18
 $EndSCHEMATC
