@@ -4294,7 +4294,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD1DD5C)
-    (at 30.75 112.75)
+    (at 60.875001 118)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CCA295D)
@@ -4338,7 +4338,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD1DD75)
-    (at 30.75 110.5 180)
+    (at 60.875001 115.75 180)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CCA251F)
@@ -4382,7 +4382,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD1DD8E)
-    (at 30.75 119.5)
+    (at 78.625001 117.5)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CCA20A0)
@@ -4426,7 +4426,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD1DDA7)
-    (at 30.75 117.25 180)
+    (at 78.625001 115 180)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CC9F5AF)
@@ -4470,7 +4470,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD1DDC0)
-    (at 30.75 102.75)
+    (at 60.875001 135.525)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CCC7455)
@@ -4514,7 +4514,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD1DDD9)
-    (at 30.75 104.75 180)
+    (at 60.875001 138 180)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CCC744B)
@@ -4731,7 +4731,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD1DE53)
-    (at 35.25 110.5 180)
+    (at 60.375001 113.5 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CCAA4E2)
@@ -4767,7 +4767,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD1DE64)
-    (at 35 117.25 180)
+    (at 78.125001 112.5 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CCB99D6)
@@ -4803,7 +4803,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD1DE75)
-    (at 35.25 104.75 180)
+    (at 60.375001 133.25 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CCC746D)
@@ -5163,7 +5163,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD2044F)
-    (at 30.75 125.25)
+    (at 78.625001 138)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CD47633)
@@ -5206,7 +5206,7 @@
   )
 
   (module Diode_SMD:D_SOD-123 (layer B.Cu) (tedit 58645DC7) (tstamp 5CD20468)
-    (at 30.75 122.75 180)
+    (at 78.625001 135.5 180)
     (descr SOD-123)
     (tags SOD-123)
     (path /5CD4763D)
@@ -5320,7 +5320,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD20497)
-    (at 35 125.25 180)
+    (at 78.125001 132.25 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CD47627)
@@ -5356,7 +5356,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD204A8)
-    (at 58 130 180)
+    (at 60.375001 126.75 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CDA6660)
@@ -5392,7 +5392,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD204B9)
-    (at 83.75 132 180)
+    (at 83.75 132.25 180)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CD647C5)
@@ -5428,7 +5428,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD24489)
-    (at 60.875001 126.524999)
+    (at 60.375001 124.25)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5CE2C7A6)
@@ -5464,7 +5464,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD2449A)
-    (at 78.5 126.5)
+    (at 78.125001 126.5)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5CE3D55F)
@@ -5536,7 +5536,7 @@
   )
 
   (module Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD244BC)
-    (at 78.25 143.5)
+    (at 78.125001 143.5)
     (descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "capacitor handsolder")
     (path /5CE4EE41)
@@ -5572,7 +5572,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD244CD)
-    (at 60.75 123.5)
+    (at 60.375001 121.75)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CE28D15)
@@ -5608,7 +5608,7 @@
   )
 
   (module Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder (layer B.Cu) (tedit 5B36C52B) (tstamp 5CD244DE)
-    (at 78.375001 123.024999)
+    (at 78.125001 123.024999)
     (descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
     (tags "resistor handsolder")
     (path /5CE29264)
