@@ -31,15 +31,15 @@ $EndComp
 $Comp
 L power:GNDA #PWR?
 U 1 1 5CD8148D
-P 4475 3450
+P 4475 3800
 AR Path="/5CD8148D" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/5CD8148D" Ref="#PWR?"  Part="1" 
 AR Path="/5CEBAECA/5CD8148D" Ref="#PWR0417"  Part="1" 
-F 0 "#PWR0417" H 4475 3200 50  0001 C CNN
-F 1 "GNDA" H 4650 3400 50  0000 C CNN
-F 2 "" H 4475 3450 50  0001 C CNN
-F 3 "" H 4475 3450 50  0001 C CNN
-	1    4475 3450
+F 0 "#PWR0417" H 4475 3550 50  0001 C CNN
+F 1 "GNDA" H 4650 3750 50  0000 C CNN
+F 2 "" H 4475 3800 50  0001 C CNN
+F 3 "" H 4475 3800 50  0001 C CNN
+	1    4475 3800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -524,12 +524,12 @@ F 8 "Unavailable" H 4875 3100 50  0001 L BNN "Field8"
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	4475 3450 4475 3300
+	4475 3800 4475 3650
 Wire Wire Line
-	4175 3300 4475 3300
-Connection ~ 4475 3300
+	4175 3650 4475 3650
+Connection ~ 4475 3650
 Wire Wire Line
-	4475 3300 4775 3300
+	4475 3650 4775 3650
 Wire Wire Line
 	4975 3100 5175 3100
 Wire Wire Line
@@ -562,4 +562,28 @@ F 3 "~" H 4975 2700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5125 2700 5175 2700
+$Comp
+L Device:R R?
+U 1 1 5CD94749
+P 4175 3500
+AR Path="/5CD94749" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5CD94749" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5CD94749" Ref="R405"  Part="1" 
+F 0 "R405" V 3968 3500 50  0000 C CNN
+F 1 "1k" V 4059 3500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4105 3500 50  0001 C CNN
+F 3 "~" H 4175 3500 50  0001 C CNN
+	1    4175 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4775 3300 4775 3650
+Wire Wire Line
+	4175 3350 4175 3300
+Text Label 3775 3100 0    50   ~ 0
+b1
+Text Label 4175 2775 0    50   ~ 0
+c1
+Text Label 4175 3300 0    50   ~ 0
+e1
 $EndSCHEMATC
