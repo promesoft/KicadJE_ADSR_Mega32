@@ -1474,7 +1474,7 @@ U 1 1 5CFD32A3
 P 10125 6100
 F 0 "RV406" V 9918 6100 50  0000 C CNN
 F 1 "R_POT_TRIM" V 10009 6100 50  0000 C CNN
-F 2 "" H 10125 6100 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 10125 6100 50  0001 C CNN
 F 3 "~" H 10125 6100 50  0001 C CNN
 	1    10125 6100
 	0    1    1    0   
@@ -1633,13 +1633,13 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL074 U401
 U 5 1 5D09676E
-P 4900 1100
-F 0 "U401" H 4925 900 50  0000 C CNN
-F 1 "TL074" H 4900 824 50  0000 C CNN
-F 2 "" H 4850 1200 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4950 1300 50  0001 C CNN
-	5    4900 1100
-	1    0    0    1   
+P 4700 1100
+F 0 "U401" H 4725 900 50  0000 C CNN
+F 1 "TL074" H 4700 824 50  0000 C CNN
+F 2 "" H 4650 1200 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 4750 1300 50  0001 C CNN
+	5    4700 1100
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	4450 650  4800 650 
@@ -1661,7 +1661,7 @@ U 1 1 5D0CB8F8
 P 1250 2125
 F 0 "RV405" V 1043 2125 50  0000 C CNN
 F 1 "10k_offset" V 1134 2125 50  0000 C CNN
-F 2 "" H 1250 2125 50  0001 C CNN
+F 2 "Potentiometer_THT:Potentiometer_Piher_PT-6-V_Vertical" H 1250 2125 50  0001 C CNN
 F 3 "~" H 1250 2125 50  0001 C CNN
 	1    1250 2125
 	0    1    1    0   
@@ -1813,12 +1813,22 @@ $EndComp
 $Comp
 L Amplifier_Operational:TL072 U403
 U 3 1 5D1453A5
-P 8900 2975
-F 0 "U403" H 8858 3021 50  0000 L CNN
-F 1 "TL072" H 8858 2930 50  0000 L CNN
-F 2 "" H 8900 2975 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8900 2975 50  0001 C CNN
-	3    8900 2975
+P 5250 1100
+F 0 "U403" H 5208 1146 50  0000 L CNN
+F 1 "TL072" H 5208 1055 50  0000 L CNN
+F 2 "" H 5250 1100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 5250 1100 50  0001 C CNN
+	3    5250 1100
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	5150 650  5150 800 
+Wire Wire Line
+	4800 650  5150 650 
+Connection ~ 4800 650 
+Wire Wire Line
+	4800 1525 5150 1525
+Wire Wire Line
+	5150 1525 5150 1400
+Connection ~ 4800 1525
 $EndSCHEMATC
