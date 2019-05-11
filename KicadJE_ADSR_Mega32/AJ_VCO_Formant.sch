@@ -573,22 +573,22 @@ Wire Wire Line
 	3275 6625 3425 6625
 Connection ~ 3425 6625
 Wire Wire Line
-	1400 2275 1250 2275
+	4450 2600 4300 2600
 Wire Wire Line
-	1100 2375 1400 2375
+	4150 2700 4450 2700
 $Comp
 L Connector:AudioJack2_SwitchT J?
 U 1 1 5CDA6FCA
-P 1600 2375
+P 4650 2700
 AR Path="/5CDA6FCA" Ref="J?"  Part="1" 
 AR Path="/5D60ED9A/5CDA6FCA" Ref="J?"  Part="1" 
 AR Path="/5CD6EBF4/5CDA6FCA" Ref="J?"  Part="1" 
 AR Path="/5CEBAECA/5CDA6FCA" Ref="J404"  Part="1" 
-F 0 "J404" H 1367 2446 50  0000 R CNN
-F 1 "Out" H 1367 2355 50  0000 R CNN
-F 2 "AJ-Dropbox-Kicad:PJ301SM" H 1600 2375 50  0001 C CNN
-F 3 "~" H 1600 2375 50  0001 C CNN
-	1    1600 2375
+F 0 "J404" H 4417 2771 50  0000 R CNN
+F 1 "Out" H 4417 2680 50  0000 R CNN
+F 2 "AJ-Dropbox-Kicad:PJ301SM" H 4650 2700 50  0001 C CNN
+F 3 "~" H 4650 2700 50  0001 C CNN
+	1    4650 2700
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -809,7 +809,7 @@ Wire Wire Line
 	3275 5925 3625 5925
 Wire Wire Line
 	3925 5925 4050 5925
-Text GLabel 1100 2375 0    50   Input ~ 0
+Text GLabel 4150 2700 0    50   Input ~ 0
 VCO_Out
 Text GLabel 4225 5925 2    50   Input ~ 0
 VCO_Control
@@ -914,19 +914,19 @@ Wire Wire Line
 $Comp
 L power:GNDA #PWR?
 U 1 1 5CE20133
-P 1250 2525
+P 4300 2850
 AR Path="/5CD6EBF4/5CE20133" Ref="#PWR?"  Part="1" 
 AR Path="/5CE20133" Ref="#PWR?"  Part="1" 
 AR Path="/5CEBAECA/5CE20133" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1250 2275 50  0001 C CNN
-F 1 "GNDA" H 1255 2352 50  0000 C CNN
-F 2 "" H 1250 2525 50  0001 C CNN
-F 3 "" H 1250 2525 50  0001 C CNN
-	1    1250 2525
+F 0 "#PWR?" H 4300 2600 50  0001 C CNN
+F 1 "GNDA" H 4305 2677 50  0000 C CNN
+F 2 "" H 4300 2850 50  0001 C CNN
+F 3 "" H 4300 2850 50  0001 C CNN
+	1    4300 2850
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1250 2275 1250 2525
+	4300 2600 4300 2850
 $Comp
 L Amplifier_Operational:TL074 U?
 U 1 1 5CE2D531
@@ -1622,12 +1622,12 @@ Wire Wire Line
 $Comp
 L Amplifier_Operational:TL074 U?
 U 4 1 5D094665
-P 8150 4025
-F 0 "U?" H 8175 3825 50  0000 C CNN
-F 1 "TL074" H 8150 3749 50  0000 C CNN
-F 2 "" H 8100 4125 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 8200 4225 50  0001 C CNN
-	4    8150 4025
+P 1750 3025
+F 0 "U?" H 1775 2825 50  0000 C CNN
+F 1 "TL074" H 1850 2900 50  0000 C CNN
+F 2 "" H 1700 3125 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 1800 3225 50  0001 C CNN
+	4    1750 3025
 	1    0    0    1   
 $EndComp
 $Comp
@@ -1651,4 +1651,141 @@ Wire Wire Line
 Wire Wire Line
 	4800 1525 4800 1400
 Connection ~ 4450 1525
+Text GLabel 1250 3125 0    50   Input ~ 0
+VCO_Exp
+Wire Wire Line
+	1250 3125 1450 3125
+$Comp
+L Device:R_POT_TRIM RV?
+U 1 1 5D0CB8F8
+P 1250 2125
+F 0 "RV?" V 1043 2125 50  0000 C CNN
+F 1 "10k_offset" V 1134 2125 50  0000 C CNN
+F 2 "" H 1250 2125 50  0001 C CNN
+F 3 "~" H 1250 2125 50  0001 C CNN
+	1    1250 2125
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D0D9BD1
+P 1250 2475
+AR Path="/5D0D9BD1" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D0D9BD1" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D0D9BD1" Ref="R?"  Part="1" 
+F 0 "R?" V 1043 2475 50  0000 C CNN
+F 1 "100R" V 1134 2475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1180 2475 50  0001 C CNN
+F 3 "~" H 1250 2475 50  0001 C CNN
+	1    1250 2475
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1450 2925 1250 2925
+Wire Wire Line
+	1250 2275 1250 2325
+Wire Wire Line
+	1250 2625 1250 2650
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
+U 1 1 5D0E9DD6
+P 975 2075
+AR Path="/5D0E9DD6" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D0E9DD6" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D0E9DD6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 975 1925 50  0001 C CNN
+F 1 "+12V" H 1100 2150 50  0000 C CNN
+F 2 "" H 975 2075 50  0001 C CNN
+F 3 "" H 975 2075 50  0001 C CNN
+	1    975  2075
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-12V #PWR?
+U 1 1 5D0EA344
+P 1500 2150
+AR Path="/5D0EA344" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D0EA344" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D0EA344" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1500 2250 50  0001 C CNN
+F 1 "-12V" H 1325 2225 50  0000 C CNN
+F 2 "" H 1500 2150 50  0001 C CNN
+F 3 "" H 1500 2150 50  0001 C CNN
+	1    1500 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1100 2125 975  2125
+Wire Wire Line
+	975  2125 975  2075
+Wire Wire Line
+	1400 2125 1500 2125
+Wire Wire Line
+	1500 2125 1500 2150
+$Comp
+L Device:C C?
+U 1 1 5D0FA339
+P 1725 2475
+AR Path="/5D0FA339" Ref="C?"  Part="1" 
+AR Path="/5CD3F059/5D0FA339" Ref="C?"  Part="1" 
+AR Path="/5CEBAECA/5D0FA339" Ref="C?"  Part="1" 
+F 0 "C?" V 1775 2300 50  0000 L CNN
+F 1 "12p" V 1775 2550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1763 2325 50  0001 C CNN
+F 3 "~" H 1725 2475 50  0001 C CNN
+	1    1725 2475
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5D0FA881
+P 1725 2650
+AR Path="/5D0FA881" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D0FA881" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D0FA881" Ref="R?"  Part="1" 
+F 0 "R?" V 1725 2650 50  0000 C CNN
+F 1 "4k7" V 1650 2875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1655 2650 50  0001 C CNN
+F 3 "~" H 1725 2650 50  0001 C CNN
+	1    1725 2650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1250 2650 1575 2650
+Connection ~ 1250 2650
+Wire Wire Line
+	1250 2650 1250 2925
+Wire Wire Line
+	1575 2650 1575 2475
+Connection ~ 1575 2650
+Wire Wire Line
+	1875 2650 2125 2650
+Wire Wire Line
+	2125 2650 2125 3025
+Wire Wire Line
+	2125 3025 2050 3025
+Wire Wire Line
+	1875 2475 1875 2650
+Connection ~ 1875 2650
+$Comp
+L Device:R R?
+U 1 1 5D11CF7E
+P 2375 3025
+AR Path="/5D11CF7E" Ref="R?"  Part="1" 
+AR Path="/5CD3F059/5D11CF7E" Ref="R?"  Part="1" 
+AR Path="/5CEBAECA/5D11CF7E" Ref="R?"  Part="1" 
+F 0 "R?" V 2168 3025 50  0000 C CNN
+F 1 "240R" V 2259 3025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2305 3025 50  0001 C CNN
+F 3 "~" H 2375 3025 50  0001 C CNN
+	1    2375 3025
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2125 3025 2225 3025
+Connection ~ 2125 3025
+Text GLabel 2700 3025 2    50   Input ~ 0
+VCO_Out
+Wire Wire Line
+	2525 3025 2700 3025
 $EndSCHEMATC
