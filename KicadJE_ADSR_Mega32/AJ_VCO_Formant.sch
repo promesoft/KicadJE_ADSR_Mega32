@@ -290,47 +290,30 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CD89E75
-P 4225 1375
+P 4450 1375
 AR Path="/5CD89E75" Ref="C?"  Part="1" 
 AR Path="/5CD3F059/5CD89E75" Ref="C?"  Part="1" 
 AR Path="/5CEBAECA/5CD89E75" Ref="C406"  Part="1" 
-F 0 "C406" H 4100 1500 50  0000 L CNN
-F 1 "100n" H 4125 1300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4263 1225 50  0001 C CNN
-F 3 "~" H 4225 1375 50  0001 C CNN
-	1    4225 1375
+F 0 "C406" H 4325 1500 50  0000 L CNN
+F 1 "100n" H 4350 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4488 1225 50  0001 C CNN
+F 3 "~" H 4450 1375 50  0001 C CNN
+	1    4450 1375
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5CD89E7B
-P 4450 1375
+P 4225 1375
 AR Path="/5CD89E7B" Ref="C?"  Part="1" 
 AR Path="/5CD3F059/5CD89E7B" Ref="C?"  Part="1" 
 AR Path="/5CEBAECA/5CD89E7B" Ref="C405"  Part="1" 
-F 0 "C405" H 4325 1500 50  0000 L CNN
-F 1 "1u" H 4325 1300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4488 1225 50  0001 C CNN
-F 3 "~" H 4450 1375 50  0001 C CNN
-	1    4450 1375
+F 0 "C405" H 4100 1500 50  0000 L CNN
+F 1 "1u" H 4100 1300 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4263 1225 50  0001 C CNN
+F 3 "~" H 4225 1375 50  0001 C CNN
+	1    4225 1375
 	1    0    0    -1  
-$EndComp
-Connection ~ 4450 1225
-Wire Wire Line
-	4450 1225 4225 1225
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
-U 1 1 5CD89E84
-P 4450 1225
-AR Path="/5CD89E84" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CD89E84" Ref="#PWR?"  Part="1" 
-AR Path="/5CEBAECA/5CD89E84" Ref="#PWR0415"  Part="1" 
-F 0 "#PWR0415" H 4450 975 50  0001 C CNN
-F 1 "GND" H 4455 1052 50  0000 C CNN
-F 2 "" H 4450 1225 50  0001 C CNN
-F 3 "" H 4450 1225 50  0001 C CNN
-	1    4450 1225
-	1    0    0    1   
 $EndComp
 $Comp
 L Envelope-cache-2018-08-04-13-00-04:+12V #PWR?
@@ -373,23 +356,6 @@ F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4263 650 50  0
 F 3 "~" H 4225 800 50  0001 C CNN
 	1    4225 800 
 	-1   0    0    1   
-$EndComp
-Connection ~ 4225 950 
-Wire Wire Line
-	4225 950  4450 950 
-$Comp
-L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
-U 1 1 5CD89EA0
-P 4225 950
-AR Path="/5CD89EA0" Ref="#PWR?"  Part="1" 
-AR Path="/5CD3F059/5CD89EA0" Ref="#PWR?"  Part="1" 
-AR Path="/5CEBAECA/5CD89EA0" Ref="#PWR0416"  Part="1" 
-F 0 "#PWR0416" H 4225 700 50  0001 C CNN
-F 1 "GND" H 4230 777 50  0000 C CNN
-F 2 "" H 4225 950 50  0001 C CNN
-F 3 "" H 4225 950 50  0001 C CNN
-	1    4225 950 
-	-1   0    0    -1  
 $EndComp
 $Comp
 L power:-12V #PWR?
@@ -2471,4 +2437,43 @@ Wire Wire Line
 Connection ~ 9300 650 
 Wire Wire Line
 	9250 650  9300 650 
+$Comp
+L power:GNDA #PWR?
+U 1 1 5D8A2BD9
+P 4450 950
+AR Path="/5D8A2BD9" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D8A2BD9" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D8A2BD9" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4450 700 50  0001 C CNN
+F 1 "GNDA" H 4625 900 50  0000 C CNN
+F 2 "" H 4450 950 50  0001 C CNN
+F 3 "" H 4450 950 50  0001 C CNN
+	1    4450 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4225 950  4225 1075
+Wire Wire Line
+	4650 950  4650 1225
+Connection ~ 4650 950 
+Connection ~ 4650 1225
+$Comp
+L Envelope-cache-2018-08-04-13-00-04:GND #PWR?
+U 1 1 5D8C9F2A
+P 4125 1075
+AR Path="/5D8C9F2A" Ref="#PWR?"  Part="1" 
+AR Path="/5CD3F059/5D8C9F2A" Ref="#PWR?"  Part="1" 
+AR Path="/5CEBAECA/5D8C9F2A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4125 825 50  0001 C CNN
+F 1 "GND" H 4275 1000 50  0000 C CNN
+F 2 "" H 4125 1075 50  0001 C CNN
+F 3 "" H 4125 1075 50  0001 C CNN
+	1    4125 1075
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 1075 4225 1075
+Connection ~ 4225 1075
+Wire Wire Line
+	4225 1075 4225 1225
 $EndSCHEMATC
