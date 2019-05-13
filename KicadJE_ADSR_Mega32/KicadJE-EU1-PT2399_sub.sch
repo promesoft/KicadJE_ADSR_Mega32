@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 4
-Title ""
-Date "2019-04-25"
-Rev "Rev B"
-Comp "Promesoft"
+Title "Kicad_JE_ADSR_Mega32"
+Date "2019-05-13"
+Rev "Rev A, B, C"
+Comp "Johansen Engineering"
 Comment1 "Johansen Engineering"
 Comment2 ""
 Comment3 ""
@@ -1456,4 +1456,19 @@ F 3 "" H 5075 800 50  0001 C CNN
 $EndComp
 Text GLabel 5075 1150 1    50   Input ~ 0
 5Vreg
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DB913F1
+P 3200 1800
+AR Path="/5DB913F1" Ref="#FLG?"  Part="1" 
+AR Path="/5D60ED9A/5DB913F1" Ref="#FLG?"  Part="1" 
+AR Path="/5CD6EBF4/5DB913F1" Ref="#FLG0105"  Part="1" 
+F 0 "#FLG0105" H 3200 1875 50  0001 C CNN
+F 1 "PWR_FLAG" H 3350 1850 50  0000 C CNN
+F 2 "" H 3200 1800 50  0001 C CNN
+F 3 "~" H 3200 1800 50  0001 C CNN
+	1    3200 1800
+	-1   0    0    1   
+$EndComp
+Connection ~ 3200 1800
 $EndSCHEMATC

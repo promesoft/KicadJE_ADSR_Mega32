@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Kicad_JE_ADSR_Mega32"
+Date "2019-05-13"
+Rev "Rev A, B, C"
+Comp "Johansen Engineering"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -510,7 +510,7 @@ Wire Wire Line
 	1775 1300 1675 1300
 Connection ~ 2175 1300
 Wire Wire Line
-	2075 1300 2175 1300
+	2075 1300 2125 1300
 $Comp
 L power:+5VA #PWR?
 U 1 1 5CD57617
@@ -752,4 +752,53 @@ $EndComp
 Connection ~ 2050 1825
 Wire Wire Line
 	2050 1825 2175 1825
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5DB8AC7E
+P 1450 1300
+F 0 "#FLG0101" H 1450 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 1450 1473 50  0000 C CNN
+F 2 "" H 1450 1300 50  0001 C CNN
+F 3 "~" H 1450 1300 50  0001 C CNN
+	1    1450 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5DB8B32C
+P 2125 1300
+F 0 "#FLG0102" H 2125 1375 50  0001 C CNN
+F 1 "PWR_FLAG" H 2125 1473 50  0000 C CNN
+F 2 "" H 2125 1300 50  0001 C CNN
+F 3 "~" H 2125 1300 50  0001 C CNN
+	1    2125 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 2125 1300
+Wire Wire Line
+	2125 1300 2175 1300
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5DB8C43F
+P 1425 1825
+F 0 "#FLG0103" H 1425 1900 50  0001 C CNN
+F 1 "PWR_FLAG" H 1425 1998 50  0000 C CNN
+F 2 "" H 1425 1825 50  0001 C CNN
+F 3 "~" H 1425 1825 50  0001 C CNN
+	1    1425 1825
+	1    0    0    -1  
+$EndComp
+Connection ~ 1425 1825
+$Comp
+L power:PWR_FLAG #FLG0104
+U 1 1 5DB8C811
+P 2175 1825
+F 0 "#FLG0104" H 2175 1900 50  0001 C CNN
+F 1 "PWR_FLAG" H 2175 1998 50  0000 C CNN
+F 2 "" H 2175 1825 50  0001 C CNN
+F 3 "~" H 2175 1825 50  0001 C CNN
+	1    2175 1825
+	1    0    0    -1  
+$EndComp
+Connection ~ 2175 1825
 $EndSCHEMATC

@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Kicad_JE_ADSR_Mega32"
+Date "2019-05-13"
+Rev "Rev A, B, C"
+Comp "Johansen Engineering"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -2443,8 +2443,8 @@ U 1 1 5D8A2BD9
 P 4450 950
 AR Path="/5D8A2BD9" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/5D8A2BD9" Ref="#PWR?"  Part="1" 
-AR Path="/5CEBAECA/5D8A2BD9" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4450 700 50  0001 C CNN
+AR Path="/5CEBAECA/5D8A2BD9" Ref="#PWR0139"  Part="1" 
+F 0 "#PWR0139" H 4450 700 50  0001 C CNN
 F 1 "GNDA" H 4625 900 50  0000 C CNN
 F 2 "" H 4450 950 50  0001 C CNN
 F 3 "" H 4450 950 50  0001 C CNN
@@ -2463,8 +2463,8 @@ U 1 1 5D8C9F2A
 P 4125 1075
 AR Path="/5D8C9F2A" Ref="#PWR?"  Part="1" 
 AR Path="/5CD3F059/5D8C9F2A" Ref="#PWR?"  Part="1" 
-AR Path="/5CEBAECA/5D8C9F2A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4125 825 50  0001 C CNN
+AR Path="/5CEBAECA/5D8C9F2A" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 4125 825 50  0001 C CNN
 F 1 "GND" H 4275 1000 50  0000 C CNN
 F 2 "" H 4125 1075 50  0001 C CNN
 F 3 "" H 4125 1075 50  0001 C CNN

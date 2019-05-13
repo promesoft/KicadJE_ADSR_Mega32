@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 4
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Kicad_JE_ADSR_Mega32"
+Date "2019-05-13"
+Rev "Rev A, B, C"
+Comp "Johansen Engineering"
 Comment1 ""
 Comment2 ""
 Comment3 ""
