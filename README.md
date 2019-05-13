@@ -43,6 +43,6 @@ Third VCO - based on Format VCO
 ### 
 
 # Pictures
-![](Kicad_LFO_1/Kicad_LFO_1_Top1.png)
+![](KicadJE_ADSR_Mega32/Kicad_LFO_1_Top1.png)
 
 # Inspiration from 
