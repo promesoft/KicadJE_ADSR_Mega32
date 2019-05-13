@@ -1,9 +1,7 @@
 # KicadJE_ADSR_Mega32
-Initial ATMega32 board
--
-Second PT2399 reverb
--
-Third VCO - based on Format VCO
+Initial ATMega32 board (EU-5)
+Second PT2399 reverb (EU-4)
+Third VCO - based on Format VCO (VCO3)
 
 # Purpose
 1 - try out ATMega 32 for digital applications with more IO
