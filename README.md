@@ -1,7 +1,7 @@
 # KicadJE_ADSR_Mega32
-Initial ATMega32 board (ADSR32 EU-5)
+Initial ATMega32 board (EU-5 ADSR32)
 
-Second PT2399 reverb (Reverb EU-4)
+Second PT2399 reverb (EU-4 Reverb)
 
 Third VCO - based on Format VCO (VCO3)
 
