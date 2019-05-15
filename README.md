@@ -47,3 +47,5 @@ Third VCO - based on Format VCO (VCO3)
 
 # Inspiration from 
 https://github.com/promesoft/KicadJE_EffectsUnit1
+
+https://github.com/promesoft/ArduinoJE_ADSR
