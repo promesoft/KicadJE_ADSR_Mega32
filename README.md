@@ -45,6 +45,8 @@ Third VCO - based on Format VCO (VCO3)
 
 # Pictures
 ![](KicadJE_ADSR_Mega32/KicadJE_ADSR_Mega32_Front1.png)
+## VCO3
+![](VCO3_sch.png)
 
 # Inspiration from 
 https://github.com/promesoft/KicadJE_EffectsUnit1
