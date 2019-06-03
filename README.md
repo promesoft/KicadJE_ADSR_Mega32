@@ -8,15 +8,19 @@ Third VCO - based on Format VCO (VCO3)
 # Purpose
 1 - try out ATMega 32 for digital applications with more IO
 
-# Status - Preliminary SCH/PCB In the mail
+2 - PT2399 2nd revision
+
+3 - Formant VCO modification 3rd rev
+
+# Status - delivered
 ## Initial 
 | Stage  | Detail | Status |
 | ------------- | ------------- | ------------- |
 | create material  | sch/pcb | OK  |
 | | gerber | OK |
 | production  |   | OK |
-|  | produced | Yes |
-|  | delivered | In the mail |
+|  | produced | OK |
+|  | delivered | OK |
 
 ## Preliminary validation
 | Test  | Detail | Status |
