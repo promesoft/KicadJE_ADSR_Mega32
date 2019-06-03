@@ -7,7 +7,9 @@ Third VCO - based on Format VCO (VCO3)
 
 # Purpose
 1 - try out ATMega 32 for digital applications with more IO
+
 2 - PT2399 2nd revision
+
 3 - Formant VCO modification 3rd rev
 
 # Status - delivered
