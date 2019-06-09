@@ -55,6 +55,8 @@ Third VCO - based on Format VCO (VCO3)
 
 4 - ALL pots are reversed
 
+5 - Consider adding LED
+
 # Pictures
 ![](KicadJE_ADSR_Mega32/KicadJE_ADSR_Mega32_Front1.png)
 ## VCO3
