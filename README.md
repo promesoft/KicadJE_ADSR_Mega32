@@ -29,7 +29,7 @@ Third VCO - based on Format VCO (VCO3)
 | Initial Technical Test |  |  |
 | Initial Product Test | ADSR |  |
 | Initial Product Test | Reverb |  |
-| Initial Product Test | VCO3 |  |
+| Initial Product Test | VCO3 | Working - output and "sine" - Square not working - UMX1 works nicely as CV - FM works - LFO works |
 
 ## Secondary validation
 | Test  | Detail | Status |
@@ -37,15 +37,23 @@ Third VCO - based on Format VCO (VCO3)
 | Product Test |  | |
 | Product Test |  |  |
 | Quality | | |
-| Quality | | |
+| Quality | VCO3 | Range from 20Hz |
 | Long Term Product Test |  |  |
 | Power Draw |  | 
 
 ## Errata
-### Errata -
+### Errata - VCO3
+1 - ALL pots are reversed
 
 ## Issues and Notes
-### 
+### VCO 3
+1 - C104 needs to be bigger (tried w 20uf that worked nicely)
+
+2 - Square circuit not working
+
+3 - Unsure of trigger feature
+
+4 - ALL pots are reversed
 
 # Pictures
 ![](KicadJE_ADSR_Mega32/KicadJE_ADSR_Mega32_Front1.png)
