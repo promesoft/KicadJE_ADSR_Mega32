@@ -21,6 +21,7 @@ int main(void)
    ignore the rest of the pins. Pick your favorite!
   *************************************************/
   DDRB |= 0x01; // XXXXXXXX | 00000001 = XXXXXXX1
+  DDRC |= 0x01; // XXXXXXXX | 00000001 = XXXXXXX1
   //DDRB |= _BV(PB0); // Set PB0 as output, ignore the rest
   //DDRB |= (1 << PB0); // Shift the number '1' left 'PB0' times (PB0 = 1)
 
@@ -33,8 +34,12 @@ int main(void)
   //DDRB &= ~0x01; //00000001 -> 11111110 & XXXXXXXX = XXXXXXX0
   //DDRB &= ~_BV(PB0); 
   //DDRB &= ~(1 << PB0);
-    
-  
+
+//    PORTC |= (1 << PC6);
+    SetPinLow(&PORTC, 6);
+    SetPinLow(&PORTC, 7);
+    SetPinLow(&PORTB, 0);
+    SetPinLow(&PORTB, 1);
   // Infinite loop
   while(1)
   {
@@ -42,22 +47,54 @@ int main(void)
      A few different ways to set a pin high and 
      ignore the rest of the pins. 
     ************************************************/
-    PORTB |= 0x01;  // XXXXXXXX | 00000001 = XXXXXXX1
+    //PORTB |= 0x01;  // XXXXXXXX | 00000001 = XXXXXXX1
     //PORTB |= _BV(PB0);
     //PORTB |= (1 << PB0);
     //SetPinHigh(&PORTB, 0); 
+    /*PORTC &= ~(1 << PC2);
+    _delay_ms(200);
+    PORTC &= ~(1 << PC3);
+    _delay_ms(200);
+    PORTC &= ~(1 << PC4);
+    _delay_ms(200);
+    PORTC &= ~(1 << PC5);
     _delay_ms(1000);
-    
+    */
     
     /*********************************************** 
      A few different ways to set a pin low and 
      ignore the rest of the pins.
     ************************************************/
-    PORTB &= ~0x01;  // 00000001 -> 11111110 & XXXXXXXX = XXXXXXX0
+    //PORTB &= ~0x01;  // 00000001 -> 11111110 & XXXXXXXX = XXXXXXX0
     //PORTB &= ~_BV(PB0);
     //PORTB &= ~(1 << PB0);
     //SetPinLow(&PORTB, 0);
+/*    PORTC |= (1 << PC2);
+    _delay_ms(200);
+    PORTC |= (1 << PC3);
+    _delay_ms(200);
+    PORTC |= (1 << PC4);
+    _delay_ms(200);
+    PORTC |= (1 << PC5);
     _delay_ms(1000);
+*/
+    for (int column = 0; column < 4; column++) {
+      if (column == 0) SetPinLow(&PORTC, 6);
+      else SetPinHigh(&PORTC, 6);
+      if (column == 1) SetPinLow(&PORTC, 7);
+      else SetPinHigh(&PORTC, 7);
+      if (column == 2) SetPinLow(&PORTB, 1);
+      else SetPinHigh(&PORTB, 1);
+      if (column == 3) SetPinLow(&PORTB, 0);
+      else SetPinHigh(&PORTB, 0);
+      
+      for (int row = 0; row < 4; row++) {
+        // turn the pin on:
+        PORTC |= (1 << PC2+row);
+        _delay_ms(1);
+        PORTC &= ~(1 << PC2+row);
+      }
+    }
   }
     
   return 0;
