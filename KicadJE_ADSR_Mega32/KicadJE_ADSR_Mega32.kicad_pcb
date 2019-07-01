@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 38)
-    (tracks 1986)
+    (tracks 1987)
     (zones 0)
     (modules 217)
     (nets 133)
@@ -11,7 +11,7 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
+    (0 F.Cu signal hide)
     (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
@@ -30,7 +30,7 @@
     (46 B.CrtYd user)
     (47 F.CrtYd user)
     (48 B.Fab user)
-    (49 F.Fab user hide)
+    (49 F.Fab user)
   )
 
   (setup
@@ -11206,6 +11206,7 @@
   (segment (start 78.4 120.792874) (end 78.4 114.15001) (width 0.2) (layer B.Cu) (net 35))
   (segment (start 78.4 114.15001) (end 79.1 113.45001) (width 0.2) (layer B.Cu) (net 35))
   (segment (start 79.1 113.45001) (end 79.682115 113.45001) (width 0.2) (layer B.Cu) (net 35))
+  (segment (start 74.2 96.425) (end 76 96.425) (width 0.2) (layer F.Cu) (net 36))
   (segment (start 95.7 55) (end 96 54.7) (width 0.4) (layer F.Cu) (net 37))
   (segment (start 92.5 55) (end 95.7 55) (width 0.4) (layer F.Cu) (net 37) (status 10))
   (segment (start 96 54.7) (end 96 53.85) (width 0.4) (layer F.Cu) (net 37) (status 20))
