@@ -52,7 +52,7 @@ char col_0_LED = 0x00;
 char col_1_LED = 0x00;
 char col_2_LED = 0x00;
 char col_3_LED = 0x00;
-int counter = 0;
+int counter = 0, inc = 0;
 
 int main(void)
 {       
@@ -69,8 +69,6 @@ int main(void)
 //  PORTC = 0x00;
   //DDRB |= _BV(PB0); // Set PB0 as output, ignore the rest
   //DDRB |= (1 << PB0); // Shift the number '1' left 'PB0' times (PB0 = 1)
-  DDRA |= (0 << PA0); //Left bottom+0 input pot
-  DDRA |= (0 << PA1); //Left bottom+1 input pot
 
   DDRB |= (1 << PB0);
   DDRB |= (1 << PB1);
@@ -90,6 +88,26 @@ int main(void)
   //DDRB &= ~_BV(PB0); 
   //DDRB &= ~(1 << PB0);
 
+//  DDRA &= ~(1 << PA0); //Left bottom+0 input pot
+//  DDRA &= ~(1 << PA1); //Left bottom+1 input pot  
+
+/*
+  ADCSRA |= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); // Set ADC prescaler to 128 - 125KHz sample rate @ 16MHz
+
+  ADMUX |= (1 << REFS0); // Set ADC reference to AVCC
+  ADMUX |= (1 << ADLAR); // Left adjust ADC result to allow easy 8 bit reading
+
+  // No MUX values needed to be changed to use ADC0
+
+//  ADCSRA |= (1 << ADFR);  // Set ADC to Free-Running Mode
+  ADCSRA |= (1 << ADEN);  // Enable ADC
+
+  ADCSRA |= (1 << ADIE);  // Enable ADC Interrupt
+  sei();  // Enable Global Interrupts
+
+  ADCSRA |= (1 << ADSC);  // Start A2D Conversions
+
+*/
   // Infinite loop
   while(1)
   {
@@ -112,7 +130,7 @@ int main(void)
     //SetPinLow(&PORTB, 0);
 
     counter++;
-    
+    counter=counter+inc;
     if (counter >= 100) {
       col_2_LED |= VU0;
       col_3_LED |= ADSR1;
@@ -190,6 +208,10 @@ int main(void)
   return 0;
 }
 
+ISR(ADC_vect)
+{
+  inc = ADCH >> 4;
+}
 
 // Method to set a pin HIGH
 void SetPinHigh(volatile byte *port, byte pin)
