@@ -27,10 +27,10 @@ Third VCO - based on Format VCO (VCO3)
 | ------------- | ------------- | ------------- |
 | Initial Inspection | | OK |
 | Initial Technical Test | ADSR | ICSP:ok - Serial: no success - LED: OK - POT:no success|
-| Initial Technical Test |  |  |
+| Initial Technical Test | Reverb | OK |
 | Initial Technical Test | VCO3 | OK |
 | Initial Product Test | ADSR | |
-| Initial Product Test | Reverb |  |
+| Initial Product Test | Reverb | Works nicely (tested with 5V from 16pin Doepfer|
 | Initial Product Test | VCO3 | Working - output and "sine" - Square not working - UMX1 works nicely as CV - FM works - LFO works - POT's reversed... |
 
 ## Secondary validation
