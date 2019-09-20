@@ -31,7 +31,7 @@ Third VCO - based on Format VCO (VCO3)
 | Initial Technical Test | VCO3 | OK |
 | Initial Product Test | ADSR | |
 | Initial Product Test | Reverb |  |
-| Initial Product Test | VCO3 | Working - output and "sine" - Square not working - UMX1 works nicely as CV - FM works - LFO works |
+| Initial Product Test | VCO3 | Working - output and "sine" - Square not working - UMX1 works nicely as CV - FM works - LFO works - POT's reversed... |
 
 ## Secondary validation
 | Test  | Detail | Status |
