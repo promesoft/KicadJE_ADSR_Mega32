@@ -63,6 +63,8 @@ Third VCO - based on Format VCO (VCO3)
 ![](KicadJE_ADSR_Mega32/KicadJE_ADSR_Mega32_Front1.png)
 ## VCO3
 ![](VCO3_sch.png)
+## Reverb
+![](EU1-PT2399_sch.png)
 
 # Inspiration from 
 https://github.com/promesoft/KicadJE_EffectsUnit1
