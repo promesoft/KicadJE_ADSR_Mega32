@@ -29,7 +29,7 @@ Third VCO - based on Format VCO (VCO3)
 | Initial Technical Test | ADSR | ICSP:ok - Serial: no success - LED: OK - POT:no success|
 | Initial Technical Test | Reverb | OK |
 | Initial Technical Test | VCO3 | OK |
-| Initial Product Test | ADSR | |
+| Initial Product Test | ADSR | ADC not working due to GND conn to Aref |
 | Initial Product Test | Reverb | Works nicely (tested with 5V from 16pin Doepfer|
 | Initial Product Test | VCO3 | Working - output and "sine" - Square not working - UMX1 works nicely as CV - FM works - LFO works - POT's reversed... |
 
@@ -46,6 +46,8 @@ Third VCO - based on Format VCO (VCO3)
 ## Errata
 ### Errata - VCO3
 1 - ALL pots are reversed
+### Errata - ADSR Mega32
+1 - ADC not working due to GND conn to Aref
 
 ## Issues and Notes
 ### VCO 3
