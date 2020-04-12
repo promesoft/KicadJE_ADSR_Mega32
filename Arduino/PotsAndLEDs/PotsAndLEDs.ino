@@ -88,8 +88,8 @@ int main(void)
   //DDRB &= ~_BV(PB0); 
   //DDRB &= ~(1 << PB0);
 
-//  DDRA &= ~(1 << PA0); //Left bottom+0 input pot
-//  DDRA &= ~(1 << PA1); //Left bottom+1 input pot  
+  DDRA &= ~(1 << PA0); //Left bottom+0 input pot
+  DDRA &= ~(1 << PA1); //Left bottom+1 input pot  
 
 /*
   ADCSRA |= (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0); // Set ADC prescaler to 128 - 125KHz sample rate @ 16MHz
@@ -179,7 +179,7 @@ int main(void)
     }
 
     for (int column = 0; column < 4; column++) {
-      _delay_ms(2);
+      _delay_ms(1);
       if (column == 0) {
         SetPinLow(&PORTC, 6); //D22
         PORTC |= col_0_LED;
