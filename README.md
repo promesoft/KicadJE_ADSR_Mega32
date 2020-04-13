@@ -42,6 +42,8 @@ Third VCO - based on Format VCO (VCO3)
 | Quality | VCO3 | Range from 20Hz |
 | Long Term Product Test |  |  |
 | Power Draw |  | 
+| Power Draw |  | 
+| Power Draw | VCO3 | +5V 1mA, +12V 7mA, -12V 6mA 
 
 ## Errata
 ### Errata - VCO3
