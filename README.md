@@ -53,7 +53,7 @@ Third VCO - based on Format VCO (VCO3)
 ### Errata - VCO3
 1 - ALL pots are reversed
 ### Errata - ADSR Mega32
-1 - ADC not working due to GND conn to Aref
+1 - ADC not working due to GND conn to Aref - fix by bending leg so it does not get soldered
 
 ## Issues and Notes
 ### VCO 3
