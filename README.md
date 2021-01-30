@@ -36,10 +36,14 @@ Third VCO - based on Format VCO (VCO3)
 ## Secondary validation
 | Test  | Detail | Status |
 | ------------- | ------------- |------------- |
-| Product Test |  | Square not working|
 | Product Test |  |  |
+| Product Test |  |  |
+| Product Test | VCO | Square not working|
+| Quality | | |
 | Quality | | |
 | Quality | VCO3 | Range from 20Hz |
+| Long Term Product Test |  |  |
+| Long Term Product Test |  |  |
 | Long Term Product Test |  |  |
 | Power Draw |  | 
 | Power Draw |  | 
