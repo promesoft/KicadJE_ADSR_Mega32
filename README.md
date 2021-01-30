@@ -36,7 +36,7 @@ Third VCO - based on Format VCO (VCO3)
 ## Secondary validation
 | Test  | Detail | Status |
 | ------------- | ------------- |------------- |
-| Product Test |  | |
+| Product Test |  | Square not working|
 | Product Test |  |  |
 | Quality | | |
 | Quality | VCO3 | Range from 20Hz |
